@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laravel Main Page</title>
+    <title>{{ $title }}</title>
 </head>
 <body>
-    <h1>Project</h1>
+    <x-navbar></x-navbar>
+
+    {{ $slot }}
 </body>
 </html>
